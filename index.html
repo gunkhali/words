@@ -34,6 +34,10 @@
     .definition {
       margin-bottom: 10px;
     }
+
+    .blurred {
+      filter: blur(5px);
+    }
   </style>
 </head>
 
@@ -62,7 +66,8 @@
           const audioButton = document.createElement('button');
           audioButton.className = 'audio-button';
           audioButton.textContent = 'Play Pronunciation';
-          audioButton.onclick = () => {
+          audioButton.onclick = (e) => {
+            e.stopPropagation();
             new Audio(phoneticData.audio).play();
           };
           card.appendChild(audioButton);
@@ -97,6 +102,12 @@
       });
 
       card.appendChild(meaningsDiv);
+
+      card.addEventListener('click', () => {
+        const heading = card.querySelector("h2");
+        heading.classList.toggle('blurred');
+      });
+
       return card;
     }
 
