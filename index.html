@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .word-container {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .phonetic {
+      font-style: italic;
+      color: #555;
+    }
+
+    .audio-button {
+      margin-left: 10px;
+    }
+
+    .meanings {
+      margin-top: 10px;
+    }
+
+    .definition {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="word-list"></div>
+
+  <script src="data.js"></script>
+  <script>
+
+    function createWordCard(word) {
+      const card = document.createElement('div');
+      card.className = 'word-container';
+
+      const title = document.createElement('h2');
+      title.textContent = word.word;
+      card.appendChild(title);
+
+      const phonetic = document.createElement('p');
+      phonetic.className = 'phonetic';
+      phonetic.textContent = word.phonetic;
+      card.appendChild(phonetic);
+
+      word.phonetics.forEach(phoneticData => {
+        if (phoneticData.audio) {
+          const audioButton = document.createElement('button');
+          audioButton.className = 'audio-button';
+          audioButton.textContent = 'Play Pronunciation';
+          audioButton.onclick = () => {
+            new Audio(phoneticData.audio).play();
+          };
+          card.appendChild(audioButton);
+        }
+      });
+
+      const meaningsDiv = document.createElement('div');
+      meaningsDiv.className = 'meanings';
+
+      word.meanings.forEach(meaning => {
+        const partOfSpeech = document.createElement('h3');
+        partOfSpeech.textContent = meaning.partOfSpeech;
+        meaningsDiv.appendChild(partOfSpeech);
+
+        meaning.definitions.forEach(definition => {
+          const defDiv = document.createElement('div');
+          defDiv.className = 'definition';
+
+          const defText = document.createElement('p');
+          defText.textContent = definition.definition;
+          defDiv.appendChild(defText);
+
+          if (definition.example) {
+            const defExample = document.createElement('p');
+            defExample.style.fontStyle = 'italic';
+            defExample.textContent = `Example: ${definition.example}`;
+            defDiv.appendChild(defExample);
+          }
+
+          meaningsDiv.appendChild(defDiv);
+        });
+      });
+
+      card.appendChild(meaningsDiv);
+      return card;
+    }
+
+    const wordList = document.getElementById('word-list');
+    words.forEach(word => {
+      const wordCard = createWordCard(word);
+      wordList.appendChild(wordCard);
+    });
+  </script>
+</body>
+
+</html>
