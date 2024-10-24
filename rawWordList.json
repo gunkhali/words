@@ -1,0 +1,962 @@
+[
+  {
+    "word": "tact",
+    "definition": "consideration in dealing with others"
+  },
+  {
+    "word": "qualify",
+    "definition": "prove capable or fit; meet requirements"
+  },
+  {
+    "word": "peril",
+    "definition": "a state of danger involving risk"
+  },
+  {
+    "word": "sinister",
+    "definition": "wicked, evil, or dishonorable"
+  },
+  {
+    "word": "tempt",
+    "definition": "dispose, incline, or entice to"
+  },
+  {
+    "word": "typical",
+    "definition": "exhibiting the qualities that identify a group or kind"
+  },
+  {
+    "word": "scarce",
+    "definition": "deficient in quantity or number compared with the demand"
+  },
+  {
+    "word": "vapor",
+    "definition": "a visible suspension in the air of particles of a substance"
+  },
+  {
+    "word": "utilize",
+    "definition": "put into service"
+  },
+  {
+    "word": "humid",
+    "definition": "containing or characterized by a great deal of water vapor"
+  },
+  {
+    "word": "vanish",
+    "definition": "become invisible or unnoticeable"
+  },
+  {
+    "word": "probe",
+    "definition": "an exploratory action or expedition"
+  },
+  {
+    "word": "detect",
+    "definition": "discover or determine the existence, presence, or fact of"
+  },
+  {
+    "word": "defect",
+    "definition": "a failing or deficiency"
+  },
+  {
+    "word": "neglect",
+    "definition": "leave undone or leave out"
+  },
+  {
+    "word": "deceive",
+    "definition": "cause someone to believe an untruth"
+  },
+  {
+    "word": "undoubtedly",
+    "definition": "certainly"
+  },
+  {
+    "word": "thorough",
+    "definition": "painstakingly careful and accurate"
+  },
+  {
+    "word": "comprehensive",
+    "definition": "including all or everything"
+  },
+  {
+    "word": "defraud",
+    "definition": "(offensive) deprive of by deceit"
+  },
+  {
+    "word": "consent",
+    "definition": "give an affirmative reply to; respond favorably to"
+  },
+  {
+    "word": "massive",
+    "definition": "containing a great quantity of matter"
+  },
+  {
+    "word": "preserve",
+    "definition": "keep in safety and protect from harm, loss, or destruction"
+  },
+  {
+    "word": "resent",
+    "definition": "feel bitter or indignant about"
+  },
+  {
+    "word": "molest",
+    "definition": "harass or assault sexually; make indecent advances to"
+  },
+  {
+    "word": "gloomy",
+    "definition": "depressingly dark"
+  },
+  {
+    "word": "unforeseen",
+    "definition": "not anticipated"
+  },
+  {
+    "word": "exaggerate",
+    "definition": "enlarge beyond bounds or the truth"
+  },
+  {
+    "word": "valid",
+    "definition": "well grounded in logic or truth or having legal force"
+  },
+  {
+    "word": "prominent",
+    "definition": "conspicuous in position or importance"
+  },
+  {
+    "word": "bulky",
+    "definition": "of large size for its weight"
+  },
+  {
+    "word": "reluctant",
+    "definition": "not eager"
+  },
+  {
+    "word": "obvious",
+    "definition": "easily perceived by the senses or grasped by the mind"
+  },
+  {
+    "word": "century",
+    "definition": "a period of 100 years"
+  },
+  {
+    "word": "conclude",
+    "definition": "bring to a close"
+  },
+  {
+    "word": "undeniable",
+    "definition": "not possible to contradict"
+  },
+  {
+    "word": "lack",
+    "definition": "the state of needing something that is absent or unavailable"
+  },
+  {
+    "word": "excel",
+    "definition": "distinguish oneself"
+  },
+  {
+    "word": "compete",
+    "definition": "engage in a contest or measure oneself against others"
+  },
+  {
+    "word": "dread",
+    "definition": "fearful expectation or anticipation"
+  },
+  {
+    "word": "tendency",
+    "definition": "an inclination to do something"
+  },
+  {
+    "word": "underestimate",
+    "definition": "make too low an approximation of"
+  },
+  {
+    "word": "evidence",
+    "definition": "knowledge on which to base belief"
+  },
+  {
+    "word": "solitary",
+    "definition": "not growing or living in groups or colonies"
+  },
+  {
+    "word": "frequent",
+    "definition": "coming at short intervals or habitually"
+  },
+  {
+    "word": "glimpse",
+    "definition": "a brief or incomplete view"
+  },
+  {
+    "word": "decade",
+    "definition": "a period of 10 years"
+  },
+  {
+    "word": "hesitate",
+    "definition": "pause or hold back in uncertainty or unwillingness"
+  },
+  {
+    "word": "absurd",
+    "definition": "inconsistent with reason or logic or common sense"
+  },
+  {
+    "word": "abolish",
+    "definition": "do away with"
+  },
+  {
+    "word": "reveal",
+    "definition": "make visible"
+  },
+  {
+    "word": "prohibit",
+    "definition": "command against"
+  },
+  {
+    "word": "famine",
+    "definition": "a severe shortage of food resulting in starvation and death"
+  },
+  {
+    "word": "revive",
+    "definition": "cause to regain consciousness"
+  },
+  {
+    "word": "commence",
+    "definition": "set in motion, cause to start"
+  },
+  {
+    "word": "observant",
+    "definition": "quick to notice; showing quick and keen perception"
+  },
+  {
+    "word": "migrate",
+    "definition": "move from one country or region to another and settle there"
+  },
+  {
+    "word": "vessel",
+    "definition": "an object used as a container, especially for liquids"
+  },
+  {
+    "word": "persist",
+    "definition": "refuse to stop"
+  },
+  {
+    "word": "hazy",
+    "definition": "filled or abounding with fog or mist"
+  },
+  {
+    "word": "gleam",
+    "definition": "a flash of light"
+  },
+  {
+    "word": "unruly",
+    "definition": "unable to be governed or controlled"
+  },
+  {
+    "word": "violent",
+    "definition": "acting with great force or energy or emotional intensity"
+  },
+  {
+    "word": "brutal",
+    "definition": "resembling a beast; showing lack of human sensibility"
+  },
+  {
+    "word": "opponent",
+    "definition": "someone who offers resistance"
+  },
+  {
+    "word": "brawl",
+    "definition": "quarrel or fight noisily, angrily or disruptively"
+  },
+  {
+    "word": "vicious",
+    "definition": "having the nature of evildoing"
+  },
+  {
+    "word": "whirling",
+    "definition": "the act of rotating in a circle or spiral"
+  },
+  {
+    "word": "underdog",
+    "definition": "one who is at a disadvantage and expected to lose"
+  },
+  {
+    "word": "thrust",
+    "definition": "push forcefully"
+  },
+  {
+    "word": "bewildered",
+    "definition": "extremely confused and uncertain what to do"
+  },
+  {
+    "word": "alter",
+    "definition": "cause to change; make different"
+  },
+  {
+    "word": "revise",
+    "definition": "make changes to"
+  },
+  {
+    "word": "pledge",
+    "definition": "a binding commitment to do or give or refrain from something"
+  },
+  {
+    "word": "pursue",
+    "definition": "follow in an effort to capture"
+  },
+  {
+    "word": "unanimous",
+    "definition": "in complete agreement"
+  },
+  {
+    "word": "pioneer",
+    "definition": "one the first colonists or settlers in a new territory"
+  },
+  {
+    "word": "surpass",
+    "definition": "be or do something to a greater degree"
+  },
+  {
+    "word": "vast",
+    "definition": "unusually great in size or amount or extent or scope"
+  },
+  {
+    "word": "doubt",
+    "definition": "the state of being unsure of something"
+  },
+  {
+    "word": "penetrate",
+    "definition": "pass into or through, often by overcoming resistance"
+  },
+  {
+    "word": "pierce",
+    "definition": "penetrate or cut through with a sharp instrument"
+  },
+  {
+    "word": "accurate",
+    "definition": "characterized by perfect conformity to fact or truth "
+  },
+  {
+    "word": "caution",
+    "definition": "judiciousness in avoiding harm or danger"
+  },
+  {
+    "word": "appeal",
+    "definition": "earnest or urgent request"
+  },
+  {
+    "word": "addict",
+    "definition": "to cause to become dependent"
+  },
+  {
+    "word": "wary",
+    "definition": "marked by keen caution and watchful prudence"
+  },
+  {
+    "word": "aware",
+    "definition": " having or showing knowledge or understanding or realization"
+  },
+  {
+    "word": "misfortune",
+    "definition": "a state resulting from unfavorable outcomes"
+  },
+  {
+    "word": "avoid",
+    "definition": "stay away from"
+  },
+  {
+    "word": "wretched",
+    "definition": "deserving or inciting pity"
+  },
+  {
+    "word": "keg",
+    "definition": "small cask or barrel"
+  },
+  {
+    "word": "nourish",
+    "definition": "provide with sustenance"
+  },
+  {
+    "word": "harsh",
+    "definition": "disagreeable to the senses"
+  },
+  {
+    "word": "opt",
+    "definition": "select as an alternative over another"
+  },
+  {
+    "word": "pedestrian",
+    "definition": "a person who travels by foot"
+  },
+  {
+    "word": "glance",
+    "definition": "take a brief look at"
+  },
+  {
+    "word": "nimble",
+    "definition": "moving quickly and lightly"
+  },
+  {
+    "word": "manipulate",
+    "definition": "influence or control shrewdly or deviously"
+  },
+  {
+    "word": "reckless",
+    "definition": "marked by defiant disregard for danger or consequences"
+  },
+  {
+    "word": "horrid",
+    "definition": "grossly offensive to decency or morality"
+  },
+  {
+    "word": "rave",
+    "definition": "talk in a noisy, excited, or declamatory manner"
+  },
+  {
+    "word": "lubricate",
+    "definition": "make slippery or smooth"
+  },
+  {
+    "word": "ingenious",
+    "definition": "showing inventiveness and skill"
+  },
+  {
+    "word": "abundant",
+    "definition": "present in great quantity"
+  },
+  {
+    "word": "uneasy",
+    "definition": "causing or fraught with or showing anxiety"
+  },
+  {
+    "word": "estimate",
+    "definition": "judge tentatively"
+  },
+  {
+    "word": "morsel",
+    "definition": "a small amount of solid food; a mouthful"
+  },
+  {
+    "word": "appropriate",
+    "definition": "suitable for a particular person, place, or situation"
+  },
+  {
+    "word": "emerge",
+    "definition": "come out into view, as from concealment"
+  },
+  {
+    "word": "jagged",
+    "definition": "having a sharply uneven surface or outline"
+  },
+  {
+    "word": "linger",
+    "definition": "remain present although waning or gradually dying"
+  },
+  {
+    "word": "ambush",
+    "definition": "the act of hiding and waiting to make a surprise attack"
+  },
+  {
+    "word": "crafty",
+    "definition": "marked by skill in deception"
+  },
+  {
+    "word": "defiant",
+    "definition": "boldly resisting authority or an opposing force"
+  },
+  {
+    "word": "vigor",
+    "definition": "forceful exertion"
+  },
+  {
+    "word": "perish",
+    "definition": "pass from physical life"
+  },
+  {
+    "word": "captive",
+    "definition": "a person who is confined; especially a prisoner of war"
+  },
+  {
+    "word": "prosper",
+    "definition": "make steady progress"
+  },
+  {
+    "word": "devour",
+    "definition": "eat immoderately"
+  },
+  {
+    "word": "plea",
+    "definition": "a humble request for help from someone in authority"
+  },
+  {
+    "word": "weary",
+    "definition": "physically and mentally fatigued"
+  },
+  {
+    "word": "collide",
+    "definition": "crash together with violent impact"
+  },
+  {
+    "word": "detour",
+    "definition": "a roundabout road or route"
+  },
+  {
+    "word": "merit",
+    "definition": "the quality of being deserving"
+  },
+  {
+    "word": "relieve",
+    "definition": "free from a burden, evil, or distress"
+  },
+  {
+    "word": "baffle",
+    "definition": "be a mystery or bewildering to"
+  },
+  {
+    "word": "warden",
+    "definition": "the chief official in charge of a prison"
+  },
+  {
+    "word": "delinquent",
+    "definition": "a young offender"
+  },
+  {
+    "word": "deprive",
+    "definition": "take away"
+  },
+  {
+    "word": "homicide",
+    "definition": "the killing of a human being by another human being"
+  },
+  {
+    "word": "penalize",
+    "definition": "inflict punishment on"
+  },
+  {
+    "word": "beneficiary",
+    "definition": "the recipient of funds or other advantages"
+  },
+  {
+    "word": "exhibit",
+    "definition": "make visible or apparent"
+  },
+  {
+    "word": "proceed",
+    "definition": "move ahead; travel onward in time or space"
+  },
+  {
+    "word": "precaution",
+    "definition": "a measure taken in advance to ward off impending danger"
+  },
+  {
+    "word": "extract",
+    "definition": "remove, usually with some force or effort"
+  },
+  {
+    "word": "prior",
+    "definition": "earlier in time"
+  },
+  {
+    "word": "embrace",
+    "definition": "squeeze tightly in your arms, usually with fondness"
+  },
+  {
+    "word": "valiant",
+    "definition": "having or showing heroism or courage"
+  },
+  {
+    "word": "fierce",
+    "definition": "marked by extreme and violent energy"
+  },
+  {
+    "word": "detest",
+    "definition": "dislike intensely"
+  },
+  {
+    "word": "sneer",
+    "definition": "a facial expression of contempt or scorn"
+  },
+  {
+    "word": "scowl",
+    "definition": "frown with displeasure"
+  },
+  {
+    "word": "consider",
+    "definition": "think about carefully; weigh"
+  },
+  {
+    "word": "vermin",
+    "definition": "any of various small animals or insects that are pests"
+  },
+  {
+    "word": "wail",
+    "definition": "a cry of sorrow and grief"
+  },
+  {
+    "word": "authority",
+    "definition": "the power or right to give orders or make decisions"
+  },
+  {
+    "word": "trifle",
+    "definition": "a detail that is considered insignificant"
+  },
+  {
+    "word": "matrimony",
+    "definition": "state of being a married couple voluntarily joined for life"
+  },
+  {
+    "word": "squander",
+    "definition": "spend thoughtlessly; throw away"
+  },
+  {
+    "word": "fugitive",
+    "definition": "someone who is sought by law officers"
+  },
+  {
+    "word": "calamity",
+    "definition": "an event resulting in great loss and misfortune"
+  },
+  {
+    "word": "pauper",
+    "definition": "a person who is very poor"
+  },
+  {
+    "word": "collapse",
+    "definition": "break down, literally or metaphorically"
+  },
+  {
+    "word": "prosecute",
+    "definition": "conduct legal proceedings against a defendant "
+  },
+  {
+    "word": "bigamy",
+    "definition": "the offense of marrying someone while you have a spouse"
+  },
+  {
+    "word": "compel",
+    "definition": "force somebody to do something"
+  },
+  {
+    "word": "awkward",
+    "definition": "lacking grace or skill in manner or movement or performance"
+  },
+  {
+    "word": "venture",
+    "definition": "an undertaking with an uncertain outcome"
+  },
+  {
+    "word": "quench",
+    "definition": "satisfy, as thirst"
+  },
+  {
+    "word": "utter",
+    "definition": "without qualification"
+  },
+  {
+    "word": "pacify",
+    "definition": "ease the anger, agitation, or strong emotion of"
+  },
+  {
+    "word": "beckon",
+    "definition": "summon with a wave, nod, or some other gesture"
+  },
+  {
+    "word": "despite",
+    "definition": "contemptuous disregard"
+  },
+  {
+    "word": "disrupt",
+    "definition": "make a break in"
+  },
+  {
+    "word": "rash",
+    "definition": "imprudently incurring risk"
+  },
+  {
+    "word": "rapid",
+    "definition": "characterized by speed"
+  },
+  {
+    "word": "exhaust",
+    "definition": "wear out completely"
+  },
+  {
+    "word": "severity",
+    "definition": "excessive sternness"
+  },
+  {
+    "word": "feeble",
+    "definition": "pathetically lacking in force or effectiveness"
+  },
+  {
+    "word": "cease",
+    "definition": "put an end to a state or an activity"
+  },
+  {
+    "word": "thrifty",
+    "definition": "mindful of the future in spending money"
+  },
+  {
+    "word": "miserly",
+    "definition": "characterized by or indicative of lack of generosity"
+  },
+  {
+    "word": "outlaw",
+    "definition": "a criminal, especially one on the run from police"
+  },
+  {
+    "word": "undernourished",
+    "definition": "not getting adequate food"
+  },
+  {
+    "word": "disclose",
+    "definition": "expose to view as by removing a cover"
+  },
+  {
+    "word": "excessive",
+    "definition": "beyond normal limits"
+  },
+  {
+    "word": "disaster",
+    "definition": "an event resulting in great loss and misfortune"
+  },
+  {
+    "word": "censor",
+    "definition": "a person authorized to suppress unacceptable material"
+  },
+  {
+    "word": "culprit",
+    "definition": "someone or something responsible for harm or wrongdoing"
+  },
+  {
+    "word": "juvenile",
+    "definition": "of or relating to children or young people"
+  },
+  {
+    "word": "bait",
+    "definition": "something used to lure fish or other animals"
+  },
+  {
+    "word": "insist",
+    "definition": "be emphatic or resolute and refuse to budge"
+  },
+  {
+    "word": "toil",
+    "definition": "work hard"
+  },
+  {
+    "word": "blunder",
+    "definition": "an embarrassing mistake"
+  },
+  {
+    "word": "daze",
+    "definition": "confusion characterized by lack of clarity"
+  },
+  {
+    "word": "mourn",
+    "definition": "feel sadness"
+  },
+  {
+    "word": "subside",
+    "definition": "wear off or die down"
+  },
+  {
+    "word": "maim",
+    "definition": "injure or wound seriously and leave permanent disfiguration"
+  },
+  {
+    "word": "comprehend",
+    "definition": "get the meaning of something"
+  },
+  {
+    "word": "commend",
+    "definition": "present as worthy of regard, kindness, or confidence"
+  },
+  {
+    "word": "exempt",
+    "definition": " freed from or not subject to an obligation or liability"
+  },
+  {
+    "word": "vain",
+    "definition": "having an exaggerated sense of self-importance"
+  },
+  {
+    "word": "depict",
+    "definition": "give a description of"
+  },
+  {
+    "word": "occupant",
+    "definition": "someone who lives at a particular place for a long period"
+  },
+  {
+    "word": "appoint",
+    "definition": "assign a duty, responsibility, or obligation to"
+  },
+  {
+    "word": "quarter",
+    "definition": "one of four equal parts"
+  },
+  {
+    "word": "site",
+    "definition": "the piece of land on which something is located"
+  },
+  {
+    "word": "morality",
+    "definition": "the quality of being in accord with right or good conduct"
+  },
+  {
+    "word": "roam",
+    "definition": "move about aimlessly or without any destination"
+  },
+  {
+    "word": "attract",
+    "definition": "exert a force on"
+  },
+  {
+    "word": "commuter",
+    "definition": "someone who travels regularly to and from work"
+  },
+  {
+    "word": "confine",
+    "definition": "place limits on"
+  },
+  {
+    "word": "dispute",
+    "definition": "the act of coming into conflict"
+  },
+  {
+    "word": "lunatic",
+    "definition": "an insane person"
+  },
+  {
+    "word": "eventful",
+    "definition": "characterized by many noteworthy happenings or incidents"
+  },
+  {
+    "word": "fertile",
+    "definition": "capable of reproducing"
+  },
+  {
+    "word": "distress",
+    "definition": "a state of adversity"
+  },
+  {
+    "word": "diminish",
+    "definition": "decrease in size, extent, or range"
+  },
+  {
+    "word": "signify",
+    "definition": "denote or connote"
+  },
+  {
+    "word": "torment",
+    "definition": "intense feelings of suffering; acute mental or physical pain"
+  },
+  {
+    "word": "prejudice",
+    "definition": "a partiality preventing objective consideration of an issue"
+  },
+  {
+    "word": "shrill",
+    "definition": "having or emitting a high-pitched and sharp tone or tones"
+  },
+  {
+    "word": "jolly",
+    "definition": "full of or showing high-spirited merriment"
+  },
+  {
+    "word": "witty",
+    "definition": "demonstrating striking cleverness and humor"
+  },
+  {
+    "word": "hinder",
+    "definition": "be an obstacle to"
+  },
+  {
+    "word": "abuse",
+    "definition": "cruel or inhumane treatment"
+  },
+  {
+    "word": "mumble",
+    "definition": "talk indistinctly; usually in a low voice"
+  },
+  {
+    "word": "wad",
+    "definition": "a small mass of soft material"
+  },
+  {
+    "word": "retain",
+    "definition": "secure and keep for possible future use or application"
+  },
+  {
+    "word": "precede",
+    "definition": "be earlier in time"
+  },
+  {
+    "word": "adolescent",
+    "definition": "a person who is older than 12 but younger than 20"
+  },
+  {
+    "word": "coeducational",
+    "definition": "attended by members of both sexes"
+  },
+  {
+    "word": "spontaneous",
+    "definition": "said or done without having been planned in advance"
+  },
+  {
+    "word": "skim",
+    "definition": "remove from the surface"
+  },
+  {
+    "word": "utensil",
+    "definition": "an implement for practical use"
+  },
+  {
+    "word": "temperate",
+    "definition": "not extreme"
+  },
+  {
+    "word": "vague",
+    "definition": "lacking clarity or distinctness"
+  },
+  {
+    "word": "obtain",
+    "definition": "come into possession of"
+  },
+  {
+    "word": "soar",
+    "definition": "rise rapidly"
+  },
+  {
+    "word": "subsequent",
+    "definition": "following in time or order"
+  },
+  {
+    "word": "stationary",
+    "definition": "not capable of being moved"
+  },
+  {
+    "word": "hasty",
+    "definition": "excessively quick"
+  },
+  {
+    "word": "scorch",
+    "definition": "burn slightly and superficially so as to affect color"
+  },
+  {
+    "word": "tempest",
+    "definition": "a violent commotion or disturbance"
+  },
+  {
+    "word": "soothe",
+    "definition": "cause to feel better"
+  },
+  {
+    "word": "redeem",
+    "definition": "exchange or buy back for money; under threat"
+  },
+  {
+    "word": "resume",
+    "definition": "take up or begin anew"
+  },
+  {
+    "word": "refrain",
+    "definition": "resist doing something"
+  }
+]
