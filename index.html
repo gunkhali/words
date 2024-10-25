@@ -11,6 +11,15 @@
       margin: 20px;
     }
 
+    .search-bar {
+      top: 0;
+      z-index: 999;
+      position: sticky;
+      width: -webkit-fill-available;
+      height: 3vh;
+      margin-bottom: 15px;
+    }
+
     .word-container {
       margin-bottom: 20px;
       padding: 10px;
@@ -43,10 +52,16 @@
 
 <body>
 
+  <input type="text" id="search-bar" class="search-bar" placeholder="Search words..." oninput="filterWords()">
   <div id="word-list"></div>
 
   <script src="definitions.js"></script>
   <script>
+    const wordList = document.getElementById('word-list');
+    const searchBar = document.getElementById('search-bar');
+    const wordsPerPage = 5;
+    let currentPage = 0;
+    let filteredWords = words;
 
     function createWordCard(word) {
       const card = document.createElement('div');
@@ -111,11 +126,34 @@
       return card;
     }
 
-    const wordList = document.getElementById('word-list');
-    words.forEach(word => {
-      const wordCard = createWordCard(word);
-      wordList.appendChild(wordCard);
+    function renderWords() {
+      const start = currentPage * wordsPerPage;
+      const end = start + wordsPerPage;
+      const wordsToRender = filteredWords.slice(start, end);
+
+      wordsToRender.forEach(word => {
+        const wordCard = createWordCard(word);
+        wordList.appendChild(wordCard);
+      });
+
+      currentPage++;
+    }
+
+    function filterWords() {
+      const searchTerm = searchBar.value.toLowerCase();
+      filteredWords = words.filter((word) => word.word.toLowerCase().includes(searchTerm));
+      wordList.innerHTML = '';
+      currentPage = 0;
+      renderWords();
+    }
+
+    window.addEventListener('scroll', () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+        renderWords();
+      }
     });
+
+    renderWords(); // Initial render
   </script>
 </body>
 
