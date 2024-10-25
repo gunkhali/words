@@ -43,10 +43,6 @@
     .definition {
       margin-bottom: 10px;
     }
-
-    .blurred {
-      filter: blur(5px);
-    }
   </style>
 </head>
 
@@ -117,11 +113,6 @@
       });
 
       card.appendChild(meaningsDiv);
-
-      card.addEventListener('click', () => {
-        const heading = card.querySelector("h2");
-        heading.classList.toggle('blurred');
-      });
 
       return card;
     }
