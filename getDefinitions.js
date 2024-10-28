@@ -1,5 +1,12 @@
 const { readFileSync, writeFileSync } = require("fs");
 
+async function translate(word) {
+  const response = await fetch(
+    `https://api.datpmt.com/api/v2/dictionary/translate?string=${word}&from_lang=en&to_lang=az`
+  );
+  return await response.json();
+}
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function getRawWords() {
@@ -12,7 +19,8 @@ fetchDefinitions = async () => {
   for (const { word } of rawWords) {
     await sleep(1000);
     const response = await fetchDefinition(word);
-    responses.push(response);
+    const translation = await translate(word);
+    responses.push({ ...response, translation: translation });
 
     console.info(`Fetched definition for ${word}, index is ${responses.length}`);
   }
@@ -32,5 +40,9 @@ fetchDefinition = async (word) => {
 };
 
 fetchDefinitions().then((responses) => {
-  writeFileSync("./definitions.js", "const words = " + JSON.stringify(responses), "utf8");
+  writeFileSync(
+    "./definitions-test.js",
+    "const words = " + JSON.stringify(responses),
+    "utf8"
+  );
 });

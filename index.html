@@ -88,6 +88,10 @@
       const meaningsDiv = document.createElement('div');
       meaningsDiv.className = 'meanings';
 
+      const translation = document.createElement('h3');
+      translation.textContent = word.translation;
+      meaningsDiv.appendChild(translation);
+
       word.meanings.forEach(meaning => {
         const partOfSpeech = document.createElement('h3');
         partOfSpeech.textContent = meaning.partOfSpeech;
@@ -132,7 +136,8 @@
 
     function filterWords() {
       const searchTerm = searchBar.value.toLowerCase();
-      filteredWords = words.filter((word) => word.word.toLowerCase().includes(searchTerm));
+      filteredWords = words.filter(({ word }) => word && word.toLowerCase().includes(searchTerm));
+      console.log(filteredWords)
       wordList.innerHTML = '';
       currentPage = 0;
       renderWords();
