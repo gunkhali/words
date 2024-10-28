@@ -13,22 +13,23 @@ function getRawWords() {
   return JSON.parse(readFileSync("./rawWordList.json", "utf8"));
 }
 
-fetchDefinitions = async () => {
+async function fetchDefinitions() {
   const responses = [];
   const rawWords = getRawWords();
   for (const { word } of rawWords) {
     await sleep(1000);
     const response = await fetchDefinition(word);
     const translation = await translate(word);
-    responses.push({ ...response, translation: translation });
+    response.translation = translation;
+    responses.push(response);
 
     console.info(`Fetched definition for ${word}, index is ${responses.length}`);
   }
 
   return responses;
-};
+}
 
-fetchDefinition = async (word) => {
+async function fetchDefinition(word) {
   return fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`, {
     method: "GET",
     headers: {
@@ -37,12 +38,10 @@ fetchDefinition = async (word) => {
   })
     .then((response) => response.json())
     .then((data) => data[0]);
-};
+}
 
-fetchDefinitions().then((responses) => {
-  writeFileSync(
-    "./definitions-test.js",
-    "const words = " + JSON.stringify(responses),
-    "utf8"
-  );
-});
+fetchDefinitions().then(saveDefinitions);
+
+async function saveDefinitions(response) {
+  writeFileSync("./definitions.js", "const words = " + JSON.stringify(response), "utf8");
+}
