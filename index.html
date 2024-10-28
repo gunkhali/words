@@ -136,8 +136,10 @@
 
     function filterWords() {
       const searchTerm = searchBar.value.toLowerCase();
-      filteredWords = words.filter(({ word }) => word && word.toLowerCase().includes(searchTerm));
-      console.log(filteredWords)
+      filteredWords = words.filter(({ word, translation }) => {
+        if (word)
+          return word.toLowerCase().includes(searchTerm) || translation.includes(searchTerm);
+      });
       wordList.innerHTML = '';
       currentPage = 0;
       renderWords();
