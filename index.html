@@ -1,158 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word List</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
+      .search-bar {
+        top: 0;
+        z-index: 999;
+        position: sticky;
+        width: -webkit-fill-available;
+        height: 3vh;
+        margin-bottom: 15px;
+      }
 
-    .search-bar {
-      top: 0;
-      z-index: 999;
-      position: sticky;
-      width: -webkit-fill-available;
-      height: 3vh;
-      margin-bottom: 15px;
-    }
+      .word-container {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
 
-    .word-container {
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+      .phonetic {
+        font-style: italic;
+        color: #555;
+      }
 
-    .phonetic {
-      font-style: italic;
-      color: #555;
-    }
+      .audio-button {
+        margin-left: 10px;
+      }
 
-    .audio-button {
-      margin-left: 10px;
-    }
+      .meanings {
+        margin-top: 10px;
+      }
 
-    .meanings {
-      margin-top: 10px;
-    }
+      .definition {
+        margin-bottom: 10px;
+      }
 
-    .definition {
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
 
-<body>
+      .word-container.dark-mode {
+        border-color: #444;
+      }
 
-  <input type="text" id="search-bar" class="search-bar" placeholder="Search words..." oninput="filterWords()">
-  <div id="word-list"></div>
+      .phonetic.dark-mode {
+        color: #bbbbbb;
+      }
+    </style>
+  </head>
 
-  <script src="definitions.js"></script>
-  <script>
-    const wordList = document.getElementById('word-list');
-    const searchBar = document.getElementById('search-bar');
-    const wordsPerPage = 5;
-    let currentPage = 0;
-    let filteredWords = words;
+  <body>
+    <input
+      type="text"
+      id="search-bar"
+      class="search-bar"
+      placeholder="Search words..."
+      oninput="filterWords()"
+    />
+    <div id="word-list"></div>
 
-    function createWordCard(word) {
-      const card = document.createElement('div');
-      card.className = 'word-container';
+    <script src="definitions.js"></script>
+    <script>
+      const wordList = document.getElementById("word-list");
+      const searchBar = document.getElementById("search-bar");
+      const wordsPerPage = 5;
+      let currentPage = 0;
+      let filteredWords = words;
 
-      const title = document.createElement('h2');
-      title.textContent = word.word;
-      card.appendChild(title);
+      function createWordCard(word) {
+        const card = document.createElement("div");
+        card.className = "word-container";
 
-      const phonetic = document.createElement('p');
-      phonetic.className = 'phonetic';
-      phonetic.textContent = word.phonetic;
-      card.appendChild(phonetic);
+        const title = document.createElement("h2");
+        title.textContent = word.word;
+        card.appendChild(title);
 
-      word.phonetics.forEach(phoneticData => {
-        if (phoneticData.audio) {
-          const audioButton = document.createElement('button');
-          audioButton.className = 'audio-button';
-          audioButton.textContent = 'Play Pronunciation';
-          audioButton.onclick = (e) => {
-            e.stopPropagation();
-            new Audio(phoneticData.audio).play();
-          };
-          card.appendChild(audioButton);
+        const phonetic = document.createElement("p");
+        phonetic.className = "phonetic";
+        phonetic.textContent = word.phonetic;
+        card.appendChild(phonetic);
+
+        word.phonetics.forEach((phoneticData) => {
+          if (phoneticData.audio) {
+            const audioButton = document.createElement("button");
+            audioButton.className = "audio-button";
+            audioButton.textContent = "Play Pronunciation";
+            audioButton.onclick = (e) => {
+              e.stopPropagation();
+              new Audio(phoneticData.audio).play();
+            };
+            card.appendChild(audioButton);
+          }
+        });
+
+        const meaningsDiv = document.createElement("div");
+        meaningsDiv.className = "meanings";
+
+        const translation = document.createElement("h3");
+        translation.textContent = word.translation;
+        meaningsDiv.appendChild(translation);
+
+        word.meanings.forEach((meaning) => {
+          const partOfSpeech = document.createElement("h3");
+          partOfSpeech.textContent = meaning.partOfSpeech;
+          meaningsDiv.appendChild(partOfSpeech);
+
+          meaning.definitions.forEach((definition) => {
+            const defDiv = document.createElement("div");
+            defDiv.className = "definition";
+
+            const defText = document.createElement("p");
+            defText.textContent = definition.definition;
+            defDiv.appendChild(defText);
+
+            if (definition.example) {
+              const defExample = document.createElement("p");
+              defExample.style.fontStyle = "italic";
+              defExample.textContent = `Example: ${definition.example}`;
+              defDiv.appendChild(defExample);
+            }
+
+            meaningsDiv.appendChild(defDiv);
+          });
+        });
+
+        card.appendChild(meaningsDiv);
+
+        return card;
+      }
+
+      function renderWords() {
+        const start = currentPage * wordsPerPage;
+        const end = start + wordsPerPage;
+        const wordsToRender = filteredWords.slice(start, end);
+
+        wordsToRender.forEach((word) => {
+          const wordCard = createWordCard(word);
+          wordList.appendChild(wordCard);
+        });
+
+        currentPage++;
+      }
+
+      function filterWords() {
+        const searchTerm = searchBar.value.toLowerCase();
+        filteredWords = words.filter(({ word, translation }) => {
+          if (word)
+            return (
+              word.toLowerCase().includes(searchTerm) || translation.includes(searchTerm)
+            );
+        });
+        wordList.innerHTML = "";
+        currentPage = 0;
+        renderWords();
+      }
+
+      window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+          renderWords();
         }
       });
 
-      const meaningsDiv = document.createElement('div');
-      meaningsDiv.className = 'meanings';
-
-      const translation = document.createElement('h3');
-      translation.textContent = word.translation;
-      meaningsDiv.appendChild(translation);
-
-      word.meanings.forEach(meaning => {
-        const partOfSpeech = document.createElement('h3');
-        partOfSpeech.textContent = meaning.partOfSpeech;
-        meaningsDiv.appendChild(partOfSpeech);
-
-        meaning.definitions.forEach(definition => {
-          const defDiv = document.createElement('div');
-          defDiv.className = 'definition';
-
-          const defText = document.createElement('p');
-          defText.textContent = definition.definition;
-          defDiv.appendChild(defText);
-
-          if (definition.example) {
-            const defExample = document.createElement('p');
-            defExample.style.fontStyle = 'italic';
-            defExample.textContent = `Example: ${definition.example}`;
-            defDiv.appendChild(defExample);
-          }
-
-          meaningsDiv.appendChild(defDiv);
-        });
-      });
-
-      card.appendChild(meaningsDiv);
-
-      return card;
-    }
-
-    function renderWords() {
-      const start = currentPage * wordsPerPage;
-      const end = start + wordsPerPage;
-      const wordsToRender = filteredWords.slice(start, end);
-
-      wordsToRender.forEach(word => {
-        const wordCard = createWordCard(word);
-        wordList.appendChild(wordCard);
-      });
-
-      currentPage++;
-    }
-
-    function filterWords() {
-      const searchTerm = searchBar.value.toLowerCase();
-      filteredWords = words.filter(({ word, translation }) => {
-        if (word)
-          return word.toLowerCase().includes(searchTerm) || translation.includes(searchTerm);
-      });
-      wordList.innerHTML = '';
-      currentPage = 0;
-      renderWords();
-    }
-
-    window.addEventListener('scroll', () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-        renderWords();
-      }
-    });
-
-    renderWords(); // Initial render
-  </script>
-</body>
-
+      renderWords(); // Initial render
+    </script>
+  </body>
 </html>
