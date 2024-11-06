@@ -71,6 +71,12 @@
 
     <script src="definitions.js"></script>
     <script>
+      let fullWords = false;
+
+      if (window.location.search.slice(1) === "full") {
+        fullWords = true;
+      }
+
       const wordList = document.getElementById("word-list");
       const searchBar = document.getElementById("search-bar");
       const wordsPerPage = 5;
@@ -142,9 +148,12 @@
       function renderWords() {
         const start = currentPage * wordsPerPage;
         const end = start + wordsPerPage;
-        const wordsToRender = filteredWords.slice(start, end);
+        const wordsToRender = filteredWords.slice(
+          start,
+          fullWords ? filteredWords.length : end
+        );
 
-        wordsToRender.forEach((word) => {
+        wordsToRender.forEach((word, idx) => {
           const wordCard = createWordCard(word);
           wordList.appendChild(wordCard);
         });
